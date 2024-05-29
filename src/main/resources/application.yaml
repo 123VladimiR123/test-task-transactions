@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo
+
+  r2dbc:
+    url: r2dbc:h2:file:///./tmp/testdb
+    username: sa
+    password:
+    pool:
+      initial-size: 100
+      max-size: 200
+
+  flyway:
+    url: jdbc:h2:file:./tmp/testdb
+    user: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+logging:
+  file:
+    name: log.txt
